@@ -1,0 +1,167 @@
+/* copy this page and add it to your main style sheet */
+.blog {
+  padding: 0px !important; }
+
+.l-advert-area {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px; }
+  .l-advert-area .ad-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 80px;
+    background: #f26e1d;
+    font-family: sans-serif;
+    color: #fff;
+    text-align: center; }
+    .l-advert-area .ad-container p {
+      margin: 0px; }
+
+/*feature-article*/
+.l-feature-article {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  height: 500px;
+  margin: 0px 0px 30px;
+  background: url("../imgs/tools1.jpg");
+  background-size: cover;
+  background-position: center; }
+  .l-feature-article:hover .big-link {
+    opacity: 0.3; }
+  .l-feature-article .big-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+    z-index: 2;
+    -webkit-transition: all 0.4s ease-in;
+            transition: all 0.4s ease-in; }
+  .l-feature-article .feature-details {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    margin-left: 30px;
+    height: auto;
+    top: 0;
+    z-index: 2; }
+    .l-feature-article .feature-details h1, .l-feature-article .feature-details p {
+      color: #fff; }
+  .l-feature-article .readmore {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    background: #f26e1d;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+    -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start; }
+    .l-feature-article .readmore:hover {
+      background: #fff;
+      color: #f26e1d; }
+
+/*article list*/
+.l-articles {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  position: relative;
+  background: #e5e5e5;
+  padding: 30px;
+  margin: 0px 0px 30px; }
+  .l-articles .articles-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    -webkit-transition: all 0.4s ease-in;
+            transition: all 0.4s ease-in; }
+  .l-articles .article-image {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    width: 250px;
+    height: 250px; }
+    .l-articles .article-image img {
+      width: 100%;
+      height: 100%; }
+  .l-articles .article-details {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    margin-left: 30px;
+    z-index: 3; }
+    .l-articles .article-details .readmore {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      color: #000;
+      background: transparent;
+      border: 1px #000 solid;
+      padding: 10px 40px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      -webkit-transition: all 0.2s ease-in-out;
+              transition: all 0.2s ease-in-out;
+      -webkit-align-self: flex-start;
+          -ms-flex-item-align: start;
+              align-self: flex-start; }
+      .l-articles .article-details .readmore:hover {
+        color: #fff;
+        background: #000; }

@@ -28,6 +28,13 @@ gulp.task('moveImgs', function() {
     .pipe(gulp.dest('dist/imgs'));
 });
 
+/* move images across */
+
+gulp.task('moveHTML', function() {
+    return gulp.src('*.html')
+    .pipe(gulp.dest('dist'));
+});
+
 /* run browsersync */
 
 gulp.task('browserSync', function() {
@@ -39,6 +46,8 @@ gulp.task('browserSync', function() {
     });
 
     gulp.watch("scss/*.scss", ['compileSass']);
+    gulp.watch("*.html", ['moveHTML']);
+    gulp.watch("imgs/**", ['moveImgs']);
     gulp.watch(["dist/**/*.*"]).on('change', browsersync.reload);
 
 });
