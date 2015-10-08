@@ -1,0 +1,120 @@
+/* copy this page and add it to your main style sheet */
+
+.blog {
+  padding: 0px!important;
+}
+
+.l-advert-area{
+  padding: 30px;
+}
+
+.ad-container {
+  width: 100%;
+  height: 80px;
+  background: #f26e1d;
+  font-family: sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+/*feature-article*/
+
+.l-feature-article {
+  display: block;
+  position: relative;
+  margin: 0px 0px 30px;
+}
+.l-feature-article::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  content: ' ';
+  opacity: 0.6;
+  z-index: 1;
+  }
+
+  .l-feature-article .feature-link{
+    display: block;
+    width: 100%;
+  height: 100%;
+  }
+
+  .l-feature-article .feature-details {
+    display: block;
+    position: absolute;
+    bottom: 35%;
+    left: 30px;
+    z-index: 2;
+  }
+
+  .l-feature-article a h1, .l-feature-article a p {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .l-feature-article a.readmore {
+    display: block;
+    color: #fff;
+    background: #f26e1d;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.l-feature-article img {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+}
+
+/*article list*/
+
+.l-articles {
+  display: block;
+  background: #e5e5e5;
+  padding: 30px;
+  margin: 0px 0px 30px;
+}
+
+.l-articles .article-image{
+  display: block;
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+.l-articles .article-image img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.l-articles .article-details {
+  display: block;
+  float:left;
+  margin-left: 30px;
+}
+
+ .l-articles a.readmore {
+    display: block;
+    color: #fff;
+    background: #f26e1d;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
