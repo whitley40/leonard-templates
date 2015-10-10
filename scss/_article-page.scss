@@ -1,0 +1,26 @@
+// article page
+
+.l-article-intro, .l-article-content {
+  display:flex;
+  flex-flow:column;
+  padding:0px 30px 30px;
+  img{
+    width:100%;
+    height:auto;
+  }
+}
+
+.l-article-content {
+  //large screens up
+    @include bp-large {
+      flex-flow:row;
+      & .l-column:nth-child(1){
+      padding-right: 25px;
+
+      }
+      & .l-column:nth-child(2){
+      padding-left: 25px;
+      }
+    } 
+    
+}
