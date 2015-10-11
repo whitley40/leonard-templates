@@ -26,9 +26,9 @@
   }
   h1{
     font-family: 'Open Sans', sans-serif;
-      font-weight: 700;
-      @include font-size(50px);
-      line-height: 1.5;
+    font-weight: 700;
+    @include font-size(50px);
+    line-height: 1.5;
   }
   h2{
     font-family: 'Open Sans', sans-serif;
@@ -49,7 +49,7 @@
 .l-advert-area{
   display:flex;
   padding: 30px;
-    .ad-container {
+  .ad-container {
     display:flex;
     justify-content: center; 
     align-items: center;
@@ -74,51 +74,37 @@
 }
 
 .readmore {
-    display: flex;
-    justify-content: center;
-    color: #fff;
-    background: $l-orange;
-    padding: 15px 70px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    z-index: 40;
-    &:hover{
-      background:$l-white;
-      color:$l-orange;
-    }
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background: $l-orange;
+  padding: 15px 70px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  z-index: 40;
+  &:hover{
+    background:$l-white;
+    color:$l-orange;
+  }
     //medium screens up
     @include bp-medium {
       align-self:flex-start;
     } 
   }
 
-  .l-column {
-    display:flex;
-    flex-flow: column;
+  /*feature-article*/
+
+  .l-feature-article {
+    display: flex;
+    flex-flow:column;
+    align-items:flex-start;
+    justify-content: center;
     flex:1 100%;
-    padding-bottom: 30px;
-    //medium screens up
-    @include bp-medium {
-      flex:1 50%;
-    } 
-    img{
-      margin-bottom:15px;
-    }
-  }
-
-/*feature-article*/
-
-.l-feature-article {
-  display: flex;
-  flex-flow:column;
-  align-items:flex-start;
-  justify-content: center;
-  flex:1 100%;
-  position: relative;
-  height:500px;
-  margin: 0px 0px 30px;
+    position: relative;
+    height:500px;
+    margin: 0px 0px 30px;
   //change the url to match new background image
   background: url('../imgs/tools1.jpg');
   background-size:cover;
@@ -136,7 +122,7 @@
     transition: all 0.4s ease-in;
   }
   p{
-        max-width: 950px;
+    max-width: 950px;
   }
   .readme{
     &:hover{
